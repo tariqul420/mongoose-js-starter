@@ -1,4 +1,5 @@
 import jwt from 'jsonwebtoken';
+import config from '../config/config.js';
 import User from '../models/userSchema.js';
 
 const verifyToken = async (req, res, next) => {
@@ -8,7 +9,7 @@ const verifyToken = async (req, res, next) => {
   }
 
   // Verify Token
-  jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (error, decoded) => {
+  jwt.verify(token, config.cookie.tokenSecret, (error, decoded) => {
     if (error) {
       return res.status(401).send({ error: 'Unauthorized access' });
     }

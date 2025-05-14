@@ -14,7 +14,8 @@ const config = {
     password: process.env.MONGODB_DATABASE_PASSWORD || '',
   },
   cookie: {
-    accessTokenSecret: process.env.ACCESS_TOKEN_SECRET || '',
+    tokenSecret: process.env.ACCESS_TOKEN_SECRET || '',
+    tokenName: 'token',
   },
 };
 
