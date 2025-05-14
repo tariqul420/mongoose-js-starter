@@ -1,6 +1,6 @@
 # Mongoose Quick Start
 
-A modern Node.js application using Express, Mongoose, and MongoDB with best practices for API development.
+A modern Node.js application template using Express, Mongoose, and MongoDB with best practices for API development.
 
 ## Features
 
@@ -68,16 +68,35 @@ src/
 ├── app.js          # Express application setup
 ├── server.js       # Server entry point
 ├── config/         # Configuration files
-├── lib/           # Utility functions and database connection
-├── models/        # Mongoose models
-├── routes/        # API routes
-└── controllers/   # Route controllers
+├── lib/            # Utility functions and database connection
+├── models/         # Mongoose models
+├── routers/        # API routes
+└── controllers/    # Route controllers
 ```
 
 ## Deployment
 
 This project is configured for deployment on Vercel. The `vercel.json` file includes the necessary configuration for Node.js deployment.
 
+## Using as a Template
+
+This repository is designed to be used as a template for new MongoDB/Mongoose projects. To use it:
+
+1. Click the "Use this template" button on GitHub
+2. Clone your new repository
+3. Follow the installation instructions above
+4. Customize the project according to your needs
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
 ## License
 
-ISC
+This project is licensed under the [ISC License](LICENSE).
