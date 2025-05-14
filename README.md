@@ -65,6 +65,8 @@ This repository is set up as a template. To create your project:
    MONGODB_DATABASE_PASSWORD=your_mongodb_password
    ```
 
+   > **Note** Follow `env.example`
+
 4. **Run the development server**
    ```bash
    npm run dev
