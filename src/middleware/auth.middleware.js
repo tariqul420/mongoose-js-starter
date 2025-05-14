@@ -1,6 +1,6 @@
-const jwt = require('jsonwebtoken');
-const mongoose = require('mongoose');
-const userSchema = require('../schemas/userSchema');
+import jwt from 'jsonwebtoken';
+import mongoose from 'mongoose';
+import userSchema from '../models/userSchema';
 
 const User = mongoose.model('User', userSchema);
 
@@ -41,4 +41,4 @@ const verifyAdmin = async (req, res, next) => {
   }
 };
 
-module.exports = { verifyToken, verifyAdmin };
+export { verifyAdmin, verifyToken };

@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+import config from '../config/config';
 
 // MongoDB connection
 let cached = global.mongoose;
@@ -8,10 +9,7 @@ if (!cached) {
 }
 
 async function dbConnect() {
-  const MONGODB_URI = process.env.MONGODB_DATABASE_URL?.replace(
-    '<db_password>',
-    process.env.MONGODB_DATABASE_PASSWORD
-  );
+  const MONGODB_URI = config.mongodb.uri?.replace('<db_password>', config.mongodb.password);
 
   if (!MONGODB_URI) {
     throw new Error('Please define the MONGODB_URI environment variable inside .env.local');
