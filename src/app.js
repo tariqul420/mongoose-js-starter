@@ -3,9 +3,9 @@ import cors from 'cors';
 import express from 'express';
 import morgan from 'morgan';
 import config from './config/config';
-import { errorHandler } from './middlewares/errorHandler';
-import jwtRoutes from './routes/jwtRoutes';
-import userRoutes from './routes/userRoutes';
+import { errorHandler } from './middleware/error.middleware';
+import jwtRoutes from './routers/jwtRoutes';
+import userRoutes from './routers/userRoutes';
 
 // Express app initialization
 const app = express();
