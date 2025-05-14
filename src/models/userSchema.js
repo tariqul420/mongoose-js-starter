@@ -24,7 +24,7 @@ const userSchema = new mongoose.Schema(
       enum: ['user', 'admin'],
     },
   },
-  { timestamps: true }
+  { timestamps: true },
 );
 
 const User = mongoose.models.User || mongoose.model('User', userSchema);

@@ -2,14 +2,13 @@
   "name": "mongoose-kickstart",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "src/server.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon server.js",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "format": "prettier --write .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon src/server.js",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "format": "prettier --write src/"
   },
   "keywords": [
     "server",

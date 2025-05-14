@@ -32,12 +32,16 @@ const verifyAdmin = async (req, res, next) => {
     const isAdmin = user?.role === 'admin';
 
     if (!user || !isAdmin) {
-      return res.status(403).send({ message: 'Forbidden access. Only admins have access!' });
+      return res
+        .status(403)
+        .send({ message: 'Forbidden access. Only admins have access!' });
     }
 
     next();
   } catch (err) {
-    return res.status(500).send({ error: 'Server error', details: err.message });
+    return res
+      .status(500)
+      .send({ error: 'Server error', details: err.message });
   }
 };
 

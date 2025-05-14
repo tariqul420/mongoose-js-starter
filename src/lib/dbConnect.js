@@ -9,10 +9,15 @@ if (!cached) {
 }
 
 async function dbConnect() {
-  const MONGODB_URI = config.mongodb.uri?.replace('<db_password>', config.mongodb.password);
+  const MONGODB_URI = config.mongodb.uri?.replace(
+    '<db_password>',
+    config.mongodb.password,
+  );
 
   if (!MONGODB_URI) {
-    throw new Error('Please define the MONGODB_URI environment variable inside .env.local');
+    throw new Error(
+      'Please define the MONGODB_URI environment variable inside .env.local',
+    );
   }
 
   if (cached.conn) {
@@ -28,7 +33,7 @@ async function dbConnect() {
   }
   try {
     cached.conn = await cached.promise;
-    console.log('☘️  MongoDB connection successful');
+    console.warn('MongoDB connection successful');
   } catch (e) {
     cached.promise = null;
     console.error('MongoDB connection error:', e);

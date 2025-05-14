@@ -6,7 +6,7 @@ import dbConnect from './lib/dbConnect';
 dbConnect()
   .then(() => {
     app.listen(config.port, () => {
-      console.log(`Server running on port ${config.port}`);
+      console.warn(`Server running on port ${config.port}`);
     });
   })
   .catch((error) => {

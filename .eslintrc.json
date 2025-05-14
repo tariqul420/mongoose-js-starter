@@ -1,4 +1,5 @@
 {
+  "$schema": "https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/eslintrc.json",
   "env": {
     "node": true,
     "es2022": true
@@ -9,8 +10,8 @@
     "sourceType": "module"
   },
   "rules": {
-    "no-console": "warn",
-    "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "no-console": ["warn", { "allow": ["error", "warn"] }],
+    "no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }],
     "prettier/prettier": "error"
   }
 }
