@@ -1,8 +1,5 @@
 import jwt from 'jsonwebtoken';
-import mongoose from 'mongoose';
-import userSchema from '../models/userSchema';
-
-const User = mongoose.model('User', userSchema);
+import User from '../models/userSchema.js';
 
 const verifyToken = async (req, res, next) => {
   const token = req.cookies.token;

@@ -3,8 +3,8 @@ import {
   createUser,
   getUserRole,
   updateUser,
-} from '../controllers/userController';
-import { verifyToken } from '../middleware/auth.middleware';
+} from '../controllers/userController.js';
+import { verifyToken } from '../middleware/auth.middleware.js';
 
 const router = Router();
 

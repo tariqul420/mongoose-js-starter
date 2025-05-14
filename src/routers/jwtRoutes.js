@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { createToken, removeToken } from '../controllers/jwtController';
+import { createToken, removeToken } from '../controllers/jwtController.js';
 
 const router = Router();
 

@@ -1,6 +1,6 @@
-import app from './app';
-import config from './config/config';
-import dbConnect from './lib/dbConnect';
+import app from './app.js';
+import config from './config/config.js';
+import dbConnect from './lib/dbConnect.js';
 
 // Connect to database and start server
 dbConnect()
