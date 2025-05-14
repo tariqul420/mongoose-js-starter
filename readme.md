@@ -22,7 +22,7 @@ A modern Node.js application using Express, Mongoose, and MongoDB with best prac
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/tariqul420/mongoose-quick-start-js.git
 cd mongoose-quick-start-js
 ```
 
@@ -36,9 +36,13 @@ npm install
 
 ```env
 PORT=3000
-MONGODB_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
+NODE_ENV=development
+ACCESS_TOKEN_SECRET=
+MONGODB_DATABASE_URL=
+MONGODB_DATABASE_PASSWORD=
 ```
+
+> **Note:** follow `env.example`
 
 ## Development
 
