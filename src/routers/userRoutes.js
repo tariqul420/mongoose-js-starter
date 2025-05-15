@@ -10,7 +10,7 @@ const router = Router();
 
 // User routes
 router.post('/create', createUser);
-router.get('/:email', verifyToken, getUserRole);
+router.get('/role/:email', verifyToken, getUserRole);
 router.put('/update/:email', verifyToken, updateUser);
 
 export default router;

@@ -5,7 +5,8 @@
   "main": "src/server.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon src/server.js",
+    "start": "node --watch src/server.js",
+    "dev": "nodemon src/server.js",
     "lint": "eslint src/",
     "lint:fix": "eslint src/ --fix",
     "format": "prettier --write src/"
@@ -15,8 +16,8 @@
     "mongoose",
     "express"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": "Tariqul Islam",
+  "license": "MIT",
   "dependencies": {
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
