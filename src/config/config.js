@@ -10,12 +10,12 @@ const config = {
     credentials: true,
   },
   mongodb: {
-    uri: process.env.MONGODB_DATABASE_URL || '',
-    password: process.env.MONGODB_DATABASE_PASSWORD || '',
+    uri: process.env.MONGODB_DATABASE_URL,
+    password: process.env.MONGODB_DATABASE_PASSWORD,
   },
   cookie: {
-    tokenSecret: process.env.ACCESS_TOKEN_SECRET || '',
-    tokenName: 'token',
+    tokenSecret: process.env.TOKEN_SECRET,
+    tokenName: process.env.TOKEN_NAME,
   },
 };
 
